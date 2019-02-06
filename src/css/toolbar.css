@@ -15,13 +15,13 @@
 }
 #toolbar .column:first-child {
   flex: 1;
-  min-width: 550px; /* prevent brush tools from collapsing by default */
-  max-width: 550px;
+  min-width: 100px; /* prevent brush tools from collapsing by default */
+  max-width: 100px;
 
   height: 10vw;
   max-height: 130px; /* never larger than child element group */
   margin-top: -10px; /* flush with top */
-  align-items: flex-end;
+  align-items: flex-start;
   overflow: hidden;
 }
 #toolbar.with-workspace-small .column:first-child {
@@ -184,57 +184,13 @@
   transition: height 0.125s ease-in-out;
 }
 
-#toolbar #toolbar-light-pencil {
-  flex: 135;
-}
-#toolbar #toolbar-light-pencil .icon {
-  background-image: url(../img/toolbar-brush-tools-0.png);
-  /*background-position: 0 130%;*/
-}
 #toolbar #toolbar-pencil {
-  flex: 106;
+  flex: 500;
 }
 #toolbar #toolbar-pencil .icon {
   background-image: url(../img/toolbar-brush-tools-1.png);
   /*background-position: 0 130%;*/
 }
-#toolbar #toolbar-pen {
-  flex: 120;
-  /*background-position: 0 100%;*/
-}
-#toolbar #toolbar-pen .icon {
-  background-image: url(../img/toolbar-brush-tools-2.png);
-  /*background-position: 0 110%;*/
-}
-#toolbar #toolbar-brush {
-  flex: 134;
-}
-#toolbar #toolbar-brush .icon {
-  background-image: url(../img/toolbar-brush-tools-3.png);
-  /*background-position: 0 100%;*/
-}
-#toolbar #toolbar-tone {
-  flex: 134;
-}
-#toolbar #toolbar-tone .icon {
-  background-image: url(../img/toolbar-brush-tools-6.png);
-  /*background-position: 0 100%;*/
-}
-#toolbar #toolbar-note-pen {
-  flex: 108;
-}
-#toolbar #toolbar-note-pen .icon {
-  background-image: url(../img/toolbar-brush-tools-4.png);
-  /*background-position: 0 125%;*/
-}
-#toolbar #toolbar-eraser {
-  flex: 218;
-}
-#toolbar #toolbar-eraser .icon {
-  background-image: url(../img/toolbar-brush-tools-5.png);
-  /*background-position: 0 135%;*/
-}
-
 
 /*
  * colors

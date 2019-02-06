@@ -124,7 +124,7 @@ class StoryboarderSketchPane extends EventEmitter {
     // sync sketchpane to state
     const syncSketchPaneState = toolbarState => {
       if (toolbarState.activeTool != null) {
-        const tool = toolbarState.tools[toolbarState.activeTool]
+        const tool = toolbarState.tools['pencil']
         this.sketchPane.brush = this.sketchPane.brushes[tool.name]
         this.sketchPane.brushColor = tool.color
         this.sketchPane.brushSize = tool.size

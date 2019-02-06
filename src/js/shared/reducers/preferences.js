@@ -1,49 +1,12 @@
 const initialState = {
   toolbar: {
     tools: {
-      'light-pencil': {
-        color: undefined,
-        palette: undefined,
-        strokeOpacity: undefined
-      },
-      'brush': {
-        color: undefined,
-        palette: undefined,
-        strokeOpacity: undefined
-      },
-      'tone': {
-        color: undefined,
-        palette: undefined,
-        strokeOpacity: undefined
-      },
       'pencil': {
-        color: undefined,
-        palette: undefined,
-        strokeOpacity: undefined
-      },
-      'pen': {
-        color: undefined,
-        palette: undefined,
-        strokeOpacity: undefined
-      },
-      'note-pen': {
-        color: undefined,
-        palette: undefined,
-        strokeOpacity: undefined
-      },
-      'eraser': {
         color: undefined,
         palette: undefined,
         strokeOpacity: undefined
       }
     },
-    // guides: {
-    //   grid: undefined,
-    //   center: undefined,
-    //   thirds: undefined,
-    //   perspective: undefined
-    // },
-    // onion: undefined,
     captions: undefined
   }
 }

@@ -110,19 +110,11 @@ app.on('ready', async () => {
 
       // detect and migrate Storyboarder 1.5.x keymap
       if (
-        payload["menu:tools:pencil"] === "2" &&
-        payload["menu:tools:pen"] === "3" &&
-        payload["menu:tools:brush"] === "4" &&
-        payload["menu:tools:note-pen"] === "5" &&
-        payload["menu:tools:eraser"] === "6"
+        payload["menu:tools:pencil"] === "2"
       ) {
         console.log('Detected a Storyboarder 1.5.x keymap. Forcing update to menu:tools:*.')
         // force defaults override
         delete payload["menu:tools:pencil"]
-        delete payload["menu:tools:pen"]
-        delete payload["menu:tools:brush"]
-        delete payload["menu:tools:note-pen"]
-        delete payload["menu:tools:eraser"]
         shouldOverwrite = true
       }
 

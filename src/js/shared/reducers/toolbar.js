@@ -2,36 +2,6 @@ const R = require('ramda')
 
 const initialState = {
   tools: {
-    'light-pencil': {
-      name: 'light-pencil',
-      color: 0x90CBF9,
-      size: 20,
-      nodeOpacity: 0.25,
-      strokeOpacity: 1.0,
-      palette: [0xCFCFCF, 0x9FA8DA, 0x90CBF9],
-
-      defaultLayerName: 'reference'
-    },
-    'brush': {
-      name: 'brush',
-      color: 0x90CBF9,
-      size: 26,
-      nodeOpacity: 0.7,
-      strokeOpacity: 1.0,
-      palette: [0x4DABF5, 0x607D8B, 0x9E9E9E],
-
-      defaultLayerName: 'fill'
-    },
-    'tone': {
-      name: 'tone',
-      color: 0x162A3F,
-      size: 50,
-      nodeOpacity: 0.15,
-      strokeOpacity: 1.0,
-      palette: [0x162A3F, 0x162A3F, 0x162A3F],
-
-      defaultLayerName: 'tone'
-    },
     'pencil': {
       name: 'pencil',
       color: 0x121212,
@@ -41,36 +11,6 @@ const initialState = {
       palette: [0x373737, 0x223131, 0x121212],
 
       defaultLayerName: 'pencil'
-    },
-    'pen': {
-      name: 'pen',
-      color: 0x000000,
-      size: 2,
-      nodeOpacity: 0.9,
-      strokeOpacity: 1.0,
-      palette: [0x373737, 0x223131, 0x000000],
-
-      defaultLayerName: 'ink'
-    },
-    'note-pen': {
-      name: 'note-pen',
-      color: 0xF44336,
-      size: 8,
-      nodeOpacity: 0.9,
-      strokeOpacity: 1.0,
-      palette: [0x4CAF50, 0xFF9800, 0xF44336],
-
-      defaultLayerName: 'notes'
-    },
-    'eraser': {
-      name: 'eraser',
-      color: 0xffffff,
-      size: 26,
-      nodeOpacity: 1.0,
-      strokeOpacity: 1.0,
-      palette: [0xffffff, 0xffffff, 0xffffff],
-
-      defaultLayerName: undefined
     }
   },
 

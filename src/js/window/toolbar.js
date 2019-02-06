@@ -57,7 +57,7 @@ class Toolbar extends EventEmitter {
         el: this.el.querySelector('.toolbar-brush-modifier-controls_size'),
         getValue: () => {
           let state = this.store.getState()
-          return state.toolbar.tools[state.toolbar.activeTool].size
+          return state.toolbar.tools["pencil"].size
         },
         setValue: (pos, curr) => {
           let payload = curr + (pos * 256)
@@ -88,7 +88,7 @@ class Toolbar extends EventEmitter {
         el: this.el.querySelector('.toolbar-brush-modifier-controls_stroke-opacity'),
         getValue: () => {
           let state = this.store.getState()
-          return state.toolbar.tools[state.toolbar.activeTool].strokeOpacity
+          return state.toolbar.tools["pencil"].strokeOpacity
         },
         setValue: (pos, curr) => {
           let payload = curr + (pos * 10)
@@ -285,7 +285,7 @@ class Toolbar extends EventEmitter {
           dispatch({
             type: 'TOOLBAR_TOOL_SET',
             payload: {
-              color: state.toolbar.tools[state.toolbar.activeTool].palette[index]
+              color: state.toolbar.tools["pencil"].palette[index]
             }
           })
         })
@@ -353,11 +353,11 @@ class Toolbar extends EventEmitter {
     if (state.toolbar.activeTool && state.toolbar.activeTool !== 'eraser') {
       this.el.querySelector('#toolbar-current-color .icon').style.backgroundColor = Color(
         util.numberToColor(
-          state.toolbar.tools[state.toolbar.activeTool].color
+          state.toolbar.tools["pencil"].color
         )
       )
 
-      let palette = state.toolbar.tools[state.toolbar.activeTool].palette
+      let palette = state.toolbar.tools["pencil"].palette
       const paletteIcons = ['A', 'B', 'C'].map(letter => this.el.querySelector(`#toolbar-palette-color${letter} .icon`))
       paletteIcons[0].style.backgroundColor = Color(util.numberToColor(palette[0])).toCSS()
       paletteIcons[1].style.backgroundColor = Color(util.numberToColor(palette[1])).toCSS()
